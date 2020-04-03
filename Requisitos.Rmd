@@ -1,0 +1,37 @@
+---
+title: "Requisitos Curso Análisis Exploratorio de Datos en R"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# REQUISITOS
+
+- Tener instalado R y RStudio
+
+- Instalar en RStudio las paqueterias:
+  - tidyverse
+  - devtools
+  
+- Cuenta en Youtube para tener acceso a los videos exclusivos del curso
+
+- Saber moverse en los paths  ej: Documents/homework/erick 
+
+- Cuenta en su computadoras de Slack (https://slack.com/intl/es-mx/lp/three?utm_medium=ppc&utm_source=google&utm_campaign=d_ppc_google_mx_es_brand-hv&utm_term=slack&campaign=88216180-CEBA-40C3-8F92-4AC1F052DAB4&ds_rl=1249094&gclid=Cj0KCQjwmpb0BRCBARIsAG7y4zb3eNDqHEqd9fytvgqswWUKNN8dtsCYUB0ZXoWWsdA7pZqjWTNVWxcaAj1wEALw_wcB&gclsrc=aw.ds) para agilizar el proceso de comunicación.
+
+- Para aquellos que no saben nada de R, se sugiere busquen tutoriales basicos para ir agarrando ritmo. Usar cursos como Swirl https://swirlstats.com puede ser de mucha ayuda. Cada duda que tengan es conveniente que la comenten con todos. 
+  
+# AVISOS
+
+- El material del curso se irá subiendo cada semana al repositiorio Erickcufe/Curso2020-Analisis-exploratorio-de-datos. La URL es https://github.com/Erickcufe/Curso2020-Analisis-exploratorio-de-datos 
+
+- Cada semana será un aproximado de tres videos, y tres actividades. Cada actividad la tendrán que entregar en Slack dos días después de ser publicada. 
+
+- Tarea NO entregada acumulará una deuda de $25 pesos, los cuales se entregarán al laboratorio una vez terminado el curso. 
+
+- Abandonar el curso tendrá una cuota de $300, los cuales se entregarán al laboratorio. 
+
+- Dudas o comentarios, mediante el canal de Slack. Si se requiere habrá sesiones en vivo.
+
