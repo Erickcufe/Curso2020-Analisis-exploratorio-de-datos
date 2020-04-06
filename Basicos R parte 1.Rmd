@@ -1,0 +1,124 @@
+---
+title: "Basicos R parte 1"
+output: pdf_document
+---
+
+# Basicos 
+
+```{r}
+TRUE == TRUE 
+```
+
+## Vectores 
+
+**¿Qúe es un vector?**
+
+
+![Vector S3](Class1_2.png)
+
+
+La estructura más simple de datos en R. 
+
+`x <- c("a", "b", "c")`
+
+Se puede construir un vector de tipo numérico, lógico o carácter.
+La letra **c** significa "concatenar", y de hecho es un acrónimo para dicha palabra.
+
+Existen cuatro tipos comunes: *logical*, *integer*, *double*, *character* 
+
+**Propiedades de un vector:** 
+
+  1. Tipo
+```{r}
+x <- 1:5
+typeof(x)
+```
+  2. Longitud
+```{r}
+x <- 1:5
+length(x)
+```
+  3. Atributos
+```{r}
+x <- 1:5
+class(x)
+```
+
+**Trabajar con vectores**
+
+En R se indexa la información desde 1, para acceder a la información de una posición especifica de un vector se usan los [ ]. 
+```{r}
+x <- c("Montserrat", "Nidia", "Armando", "Oscar", "Diego")
+x[3]
+```
+```{r}
+x[c(1,2,3)]
+```
+```{r}
+x[1:3]
+```
+```{r}
+x[-3]
+```
+
+Para agregar un valor al vector se debe tomar en cuenta el tipo de vector. *Nota: si indexo con signo negativo, se elimina esa posición* 
+```{r}
+x[6] <- "Fernanda"
+x
+```
+```{r}
+x <- x[-6]
+x
+```
+
+
+## Listas
+
+Pueden tener mas de un objeto de diferente clase, es decir, puedo almanecer dentro de la misma lista objetos de clase caracter, factor y numericos, inclusive pueden añardiser data.frame!!! 
+
+```{r}
+my_list <- list(c("a", 1) , c("hola", "como", "estas"), 
+             data.frame(Nombres = c("Nidia", "Mont"), Sexo= c("F", "M")))
+my_list
+```
+
+Para ver la estructura de cualquir tipo de dato se ocupa el comando **str()**
+```{r}
+str(my_list)
+```
+
+¿Cómo se accede a los datos de una lista?
+
+¿Cuál es la diferencia entre los siguientes dos codigos?
+
+```{r}
+my_list[1]
+```
+```{r}
+my_list[[1]]
+```
+
+Con [[]] accedemos al valor (genera un objeto de menor peso de memoria), y con [] accedemos a la posición de la lista. 
+Para obtener el numero 1 de la posicion 1 de mi lista se hace lo siguiente:
+```{r}
+my_list[[1]][2]
+```
+
+Para acceder a la palabra "como" de nuestra lista se hace lo siguiente:
+```{r}
+my_list[[2]][2]
+```
+
+Tambien se puede ocupar el simbolo **$** para acceder a los datos de una lista cuando cada valor tiene un nombre
+```{r}
+my_list_2 <- list(Datos_sin_sentido = c("a", "b", 4, 8), Palabras = c("hola", "como", "estas"), 
+            Un_data_frame = data.frame(Nombres = c("Nidia", "Mont"), Sexo= c("F", "M")))
+
+my_list_2
+```
+
+```{r}
+my_list_2$Un_data_frame
+```
+
+   
